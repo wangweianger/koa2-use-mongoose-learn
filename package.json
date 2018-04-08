@@ -1,0 +1,30 @@
+{
+  "name": "koa2-use-mongoose-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangweianger/koa2-use-mongoose-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangweianger/koa2-use-mongoose-learn/issues"
+  },
+  "homepage": "https://github.com/wangweianger/koa2-use-mongoose-learn#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "koa": "^2.5.0",
+    "koa-cookie": "^1.0.0",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.0.13"
+  }
+}
