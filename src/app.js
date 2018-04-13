@@ -6,6 +6,7 @@ import cors from 'koa-cors'
 import render from 'koa-ejs'
 import serve from 'koa-static'
 import LRU from 'lru-cache'
+import session from 'koa-session'
 
 import router from './routes'
 import { SYSTEM } from './config'
@@ -43,6 +44,7 @@ mongoose.connect('mongodb://localhost:27017/blog', function(err) {
 
 app
 	.use(cookie())
+    .use(session(app))
     .use(serve(__dirname + "/assets",{
         maxage: env === 'development' ? 0 : 365 * 24 * 60 * 60
     }))

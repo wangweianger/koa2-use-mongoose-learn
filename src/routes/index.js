@@ -6,9 +6,10 @@ import controllers from '../controllers'
 
 router.get('/', (ctx, next) => {
 
-	controllers.home.getList(ctx, next)
+	// controllers.home.setToken(ctx, next)
 
-	ctx.cookies.set('npm-username','wangwei')
+    controllers.home.getToken(ctx, next)
+
  	ctx.body = '首页';
 });
 

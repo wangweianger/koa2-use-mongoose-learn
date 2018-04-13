@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 let homeSchema = new mongoose.Schema({
 
     //分类名称
-    name: String,
+    username: String,
 
-    age:Number,
+    password: String,
 
 });
 
