@@ -26,6 +26,8 @@ let homeSchema = new mongoose.Schema({
 ```
 
 ### common method
+mongoose document url:http://mongoosejs.com/docs/guide.html
+
 ```js
 Model.find()
 Model.findById()
