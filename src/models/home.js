@@ -8,6 +8,8 @@ let homeSchema = new mongoose.Schema({
 
     password: String,
 
+    updated: { type: Date, default: Date.now },
+
 });
 
 module.exports = mongoose.model('Home', homeSchema);

@@ -4,14 +4,27 @@ const router = new Router()
 import controllers from '../controllers'
 
 
-router.get('/', (ctx, next) => {
+router.get('/', async (ctx, next) => {
 
-	// controllers.home.setToken(ctx, next)
+ 	let datas = {
+ 		title:'首页'
+ 	}
 
-    controllers.home.getToken(ctx, next)
+ 	datas.result = await controllers.home.getList()
 
- 	ctx.body = '首页';
+ 	await ctx.render('index',{ datas:datas })
+
 });
+
+router.get('/set', async (ctx, next) => {
+
+ 	let result = controllers.home.saveList()
+ 	console.log(result)
+
+ 	ctx.body = result
+
+});
+
 
 
 

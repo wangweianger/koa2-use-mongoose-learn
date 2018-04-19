@@ -1,0 +1,44 @@
+<style>
+	.header,.footer{
+		height: 100px;
+		font-size: 20px;
+	}
+	.body{
+		border-top: solid 1px #ccc;
+		border-bottom: solid 1px #ccc;
+	}
+	table { border-collapse: collapse; border-spacing: 0; }
+	.table{
+		width: 80%;
+		border-top: solid 1px #ddd;
+		border-left: solid 1px #ddd;
+	}
+	.table th,.table td{
+		padding: 5px 8px;
+		border-right: solid 1px #ddd;
+		border-bottom: solid 1px #ddd;
+	}
+</style>
+<div class="header">this is header</div>
+
+<div class="body">
+	<ul>
+		<table class="table">
+			<tr>
+				<th>id</th>
+				<th>usename</th>
+				<th>password</th>
+			</tr>
+			<% datas.result.forEach(function (item) {%>   
+			<tr>
+				<td><%= item._id %></td>
+				<td><%= item.username %></td>
+				<td><%= item.password %></td>
+			</tr>
+			<% })%>
+		</table>
+	</ul>	
+
+</div>
+
+<div class="footer">this is footer</div>

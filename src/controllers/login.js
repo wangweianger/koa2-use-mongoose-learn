@@ -36,21 +36,6 @@ class Home {
 
     }
 
-    saveList(ctx,next){
-        let HOME = new home({
-            username: '小明',
-            password: '123456'
-        })
-
-        let result = HOME.save()
-
-        return result
-    }
-
-    async getList(ctx,next){
-        return await home.find().then(res => res )
-    }
-
     setToken(ctx,next){
         let data={username:'admin',password:'123456'}
 
