@@ -1,12 +1,12 @@
 ## use mongoose
 
-```
+```js
 npm install mongoose --save
 
 ```
 
 ### Linked database
-```
+```js
 mongoose.connect('mongodb://localhost:27017/blog', function(err) {
     if (err) {
         console.log('数据库连接失败');
@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost:27017/blog', function(err) {
 ```
 
 ### add Schema
-```
+```js
 let homeSchema = new mongoose.Schema({
     username: String,
     password: String,
@@ -26,7 +26,7 @@ let homeSchema = new mongoose.Schema({
 ```
 
 ### common method
-```
+```js
 Model.find()
 Model.findById()
 Model.findOne()
