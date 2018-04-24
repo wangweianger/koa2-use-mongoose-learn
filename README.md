@@ -9,9 +9,9 @@ npm install mongoose --save
 ```js
 mongoose.connect('mongodb://localhost:27017/blog', function(err) {
     if (err) {
-        console.log('数据库连接失败');
+        console.log('数据库连接失败')
     } else {
-        console.log('数据库连接成功');
+        console.log('数据库连接成功')
     }
 });
 ```
